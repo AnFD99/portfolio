@@ -1,8 +1,10 @@
-/* Slider */
+// main: ../style.less
 
 .slick-slider {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -20,6 +22,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    height: 100%;
 
     &:focus {
         outline: none;
@@ -40,6 +43,7 @@
 }
 
 .slick-track {
+    height: 100%;
     position: relative;
     left: 0;
     top: 0;
