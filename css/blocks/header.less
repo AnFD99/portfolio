@@ -1,7 +1,19 @@
 // main: ../style.less
 
 .header {
+   width: 100%;
    padding: 1.2rem 0;
+   position: relative;
+
+   &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+
+      background-color: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+   }
 }
 
 .header__inner {

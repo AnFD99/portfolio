@@ -2,6 +2,15 @@ $(function() {
 
    const worksSlider = $('[data-slider="slick"]');
 
+   // Fixed Header
+   // ===================
+
+
+
+   // Scroll
+   // ===================
+
+
    // Filter
    // ===================
    let filter = $("[data-filter]");
@@ -115,6 +124,20 @@ $(function() {
       let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
 
       currentSlider.slick("slickNext")
+   });
+
+
+   // Mobile Nav (Burger)
+   // ===================
+   
+   const navToggle = $("#navToggle");
+   const nav = $("#nav");
+
+   navToggle.on("click", function(event) {
+      event.preventDefault();
+
+      nav.toggleClass("show");
+
    });
 
 });
